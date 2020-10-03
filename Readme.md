@@ -8,8 +8,16 @@ This is a terraria clone
 
 ## How to develop
 
-Execute
+Install dependencies
 
 ```
 pip install -r ./requirements.txt
+```
+
+## How to execute
+
+Run
+
+```
+python -m terraria-clone
 ```
