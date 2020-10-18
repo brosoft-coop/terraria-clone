@@ -1,9 +1,9 @@
 import cocos
 
 
-class HelloWorld(cocos.layer.Layer):
+class HelloWorld(cocos.layer.ColorLayer):
     def __init__(self):         
-        super(HelloWorld, self).__init__()
+        super(HelloWorld, self).__init__(241, 247, 54, 255)
         
         label = cocos.text.Label(
             'Hello dude',
