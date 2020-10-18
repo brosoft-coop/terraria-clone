@@ -1,6 +1,7 @@
 import cocos
 
 from terraria_clone.labels.hello_label import HelloLabel
+from terraria_clone.agents.ghost import Ghost
 
 
 class HelloWorld(cocos.layer.ColorLayer):
@@ -13,9 +14,8 @@ class HelloWorld(cocos.layer.ColorLayer):
 
         self.add(label)
 
-        ghost = cocos.sprite.Sprite('assets/ghost_idle_1.png')
+        ghost = Ghost()
         ghost.position = 470, 240
-        ghost.scale = 0.5
 
         self.add(ghost, z=1)
 
