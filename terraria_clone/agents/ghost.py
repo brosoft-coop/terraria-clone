@@ -1,3 +1,4 @@
+import pyglet
 import cocos
 
 
@@ -13,3 +14,7 @@ class Ghost(cocos.layer.Layer):
 
     def on_mouse_motion(self, x, y, dx, dy):
         self.position = x, y
+
+    def on_key_press (self, key, modifiers):
+        if (key == pyglet.window.key.SPACE):
+            self.sprite.do(cocos.actions.RotateBy(90, 0.2))
