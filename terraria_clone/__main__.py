@@ -27,7 +27,7 @@ class GhostLand(cocos.layer.Layer):
     def on_key_press (self, key, modifiers):
         if (key == pyglet.window.key.SPACE):
             self.agent.rotate()
- 
+
 
 cocos.director.director.init()
 main_scene = cocos.scene.Scene(GhostLand())
