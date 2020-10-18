@@ -6,7 +6,6 @@ class HelloWorld(cocos.layer.Layer):
         super(HelloWorld, self).__init__()
         
         label = cocos.text.Label(
-            
             'Hello dude',
             font_name="Arial",
             font_size=30,
