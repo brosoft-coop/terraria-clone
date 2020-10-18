@@ -11,7 +11,7 @@ class HelloWorld(cocos.layer.ColorLayer):
             font_size=30,
             anchor_x='center', 
             anchor_y='center',
-            color=(255, 0, 255, 255)
+            color=(230, 20, 20, 255)
         )
         
         label.position = 320, 240
