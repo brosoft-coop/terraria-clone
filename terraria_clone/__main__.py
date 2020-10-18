@@ -1,9 +1,7 @@
 import cocos
+import pyglet
 
 from terraria_clone.agents.ghost import Ghost
-
-import pyglet
-import cocos
 
 
 class GhostLand(cocos.layer.Layer):
