@@ -6,11 +6,15 @@ class HelloWorld(cocos.layer.Layer):
         super(HelloWorld, self).__init__()
         
         label = cocos.text.Label(
-            'fgggggggggggggggggf',
-            font_name='Wide Latin',
-            font_size=20,
-            anchor_x='center', anchor_y='center',
-            color=(255, 255, 255, 255))
+            
+            'Hello dude',
+            font_name="Arial",
+            font_size=30,
+            anchor_x='center', 
+            anchor_y='center',
+            color=(255, 0, 255, 255)
+        )
+        
         label.position = 320, 240
 
         self.add(label)
