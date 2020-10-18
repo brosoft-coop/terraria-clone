@@ -1,18 +1,13 @@
 import cocos
 
+from terraria_clone.labels.hello_label import HelloLabel
+
 
 class HelloWorld(cocos.layer.ColorLayer):
     def __init__(self):         
         super(HelloWorld, self).__init__(241, 247, 54, 255)
         
-        label = cocos.text.Label(
-            'Hello dude',
-            font_name="Arial",
-            font_size=30,
-            anchor_x='center', 
-            anchor_y='center',
-            color=(230, 20, 20, 255)
-        )
+        label = HelloLabel()
         
         label.position = 320, 240
 

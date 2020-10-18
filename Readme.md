@@ -19,5 +19,5 @@ pip install -r ./requirements.txt
 Run
 
 ```
-python -m terraria-clone
+python -m terraria_clone
 ```
