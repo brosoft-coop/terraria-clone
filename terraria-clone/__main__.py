@@ -18,6 +18,12 @@ class HelloWorld(cocos.layer.ColorLayer):
 
         self.add(label)
 
+        ghost = cocos.sprite.Sprite('assets/ghost_idle_1.png')
+        ghost.position = 470, 240
+        ghost.scale = 0.5
+
+        self.add(ghost, z=1)
+
 
 
 cocos.director.director.init()
