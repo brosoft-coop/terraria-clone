@@ -26,7 +26,7 @@ class GhostLand(cocos.layer.Layer):
         if (key == pyglet.window.key.SPACE):
             self.agent.rotate()
 
-
-cocos.director.director.init()
+cocos.director.director.init(fullscreen=True)
+cocos.director.director.show_FPS = True
 main_scene = cocos.scene.Scene(GhostLand())
 cocos.director.director.run(main_scene)
